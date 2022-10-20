@@ -13,7 +13,7 @@ public class visual
         
         
         if (error == 0) {
-            for (int i = 0, i < 8, i++)
+            for (int i = 0; i < display.Count; i++)
                 Console.WriteLine(display[i + "\n"]);
         
         
