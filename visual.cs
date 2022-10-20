@@ -1,34 +1,63 @@
 using System;
-using System.Collections.Generic;
 
 namespace jumper;
 
 public class Visual
 {
-    public void parachute()
+    
+    private int errors;
+    public void parachute(int errors)
     {
-        int error = 0;
-        string[] items = {" ___ ", "/___\\", "\\   /", " \\ /", "  0", " /|\\", " / \\"};
-        List<string> display = new List<string>();
-        
-        
-        if (error == 0) {
-            for (int i = 0; i < display.Count; i++)
-                Console.WriteLine(display[i + "\n"]);
-        
-        
-        
-        
-        
-        
-        //Console.WriteLine(" ___ ");
-        //Console.WriteLine("/___\\");
-        //Console.WriteLine("\\   /");
-        //Console.WriteLine(" \\ /");
-        //Console.WriteLine("  0");
-        //Console.WriteLine(" /|\\");
-        //Console.WriteLine(" / \\");
-        
+        this.errors = errors;
+
+        Console.WriteLine();
+
+        if (errors == 0)
+        {
+            Console.WriteLine(" ___ ");
+            Console.WriteLine("/___\\");
+            Console.WriteLine("\\   /");
+            Console.WriteLine(" \\ /");
+            Console.WriteLine("  0");
+            Console.WriteLine(" /|\\");
+            Console.WriteLine(" / \\");
         }
+
+        else if (errors == 1)
+        {
+            Console.WriteLine("/___\\");
+            Console.WriteLine("\\   /");
+            Console.WriteLine(" \\ /");
+            Console.WriteLine("  0");
+            Console.WriteLine(" /|\\");
+            Console.WriteLine(" / \\");
+        }
+
+        else if (errors == 2)
+        {
+            Console.WriteLine("\\   /");
+            Console.WriteLine(" \\ /");
+            Console.WriteLine("  0");
+            Console.WriteLine(" /|\\");
+            Console.WriteLine(" / \\");
+        }
+
+        else if (errors == 3)
+        {
+            Console.WriteLine(" \\ /");
+            Console.WriteLine("  0");
+            Console.WriteLine(" /|\\");
+            Console.WriteLine(" / \\");
+        }
+
+        else if (errors == 4)
+        {
+            Console.WriteLine("  x");
+            Console.WriteLine(" /|\\");
+            Console.WriteLine(" / \\");
+        }
+
+        Console.WriteLine();
+        
     }
 }
