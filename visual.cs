@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace jumper;
 
-public class visual
+public class Visual
 {
     public void parachute()
     {
@@ -30,10 +30,5 @@ public class visual
         //Console.WriteLine(" / \\");
         
         }
-
-
-        
-
-
     }
 }

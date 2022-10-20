@@ -3,6 +3,7 @@ using System;
 namespace dumper;
 
 public class validator
+
 {
     public string GameEnd(errors)
     {
