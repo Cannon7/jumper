@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace dumper;
+namespace jumper;
 
 public class visual
 {
