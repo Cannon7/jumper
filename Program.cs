@@ -7,10 +7,9 @@ namespace jumper
         static void Main(string[] args)
         {
             Visual visual = new Visual();
-            Visual.parachute();
-            
+            visual.parachute(4);
 
         }
     }
 }
-        
+       
