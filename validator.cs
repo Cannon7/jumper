@@ -1,21 +1,44 @@
 using System;
-/*
+
 namespace dumper;
 
 public class validator
 
 {
-    public string GameEnd(errors)
+    public string GameEnd(int errors)
     {
-
+        if (errors >= 4)
+        {
+           return "over"; 
+        }
+        else
+        {
+            return "continue";
+        }
     }
-    public string LetterCheck(letterlist, guess)
+    public string LetterCheck(string[] letterlist, string guess)
     {
-
+        string dupe = "no";
+        foreach (string i in letterlist)
+        {
+            if (i == guess)
+            {
+                dupe = "yes";
+            }
+        }
+        if (dupe == "yes")
+        {
+            return "yes";
+        }
+        else
+        {
+            return "no";
+        }
     }
-    public string GuessValidate(guess, wordlist, wordprog)
-    {
+    /*
+        public string GuessValidate(guess, wordlist, wordprog)
+        {
 
-    }
+        }
+    */
 }
-*/
