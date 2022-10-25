@@ -8,7 +8,7 @@ namespace jumper{
             private string[] wordList;
             
             public WordGenerator(){
-                wordList = System.IO.File.ReadAllLines(@"C:\CSE 210\dumper\wordlewords.txt");
+                wordList = System.IO.File.ReadAllLines(@"C:\CSE 210\jumper\wordlewords.txt");
                 Random pickedWord = new Random();
                 // foreach(string word in wordList){
                 //     wordList.Append(word);

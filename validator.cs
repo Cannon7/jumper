@@ -36,9 +36,16 @@ public class validator
         }
     }
     /*
-        public string GuessValidate(guess, wordlist, wordprog)
+        public string GuessValidate(guess, wordlist, wordprog, errors, guessedLetters[])
         {
-
+            if (guess != in wordlist) 
+                errors++;
+                guessedLetters.append(guess)
+            elseif (guess in guessedLetters[])
+                Console.WriteLine("Sorry, '${guess}' has already been guessed.)
+            else
+                // Somehow display those letters and replace the dashes
+                guessedLetters.append(guess)
         }
     */
 }
