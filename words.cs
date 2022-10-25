@@ -1,6 +1,6 @@
 using System;
 
-namespace dumper{
+namespace jumper{
 
     
     public class WordGenerator
